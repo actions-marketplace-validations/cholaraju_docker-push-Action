@@ -1,4 +1,4 @@
-name: 'Publish Docker Image'
+name: 'Publish-your-Image'
 description: 'Build and publish a Docker image to Docker Hub'
 inputs:
   image_name:
@@ -17,3 +17,6 @@ inputs:
 runs:
   using: 'node20'
   main: 'dist/index.js'
+branding:
+  icon: 'award'
+  color: 'green'

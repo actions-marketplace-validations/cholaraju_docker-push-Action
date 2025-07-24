@@ -1,0 +1,19 @@
+name: 'Publish Docker Image'
+description: 'Build and publish a Docker image to Docker Hub'
+inputs:
+  image_name:
+    description: 'Name of the Docker image (e.g. username/image-name)'
+    required: true
+  docker_username:
+    description: 'Docker Hub username'
+    required: true
+  docker_password:
+    description: 'Docker Hub password or access token'
+    required: true
+  tag:
+    description: 'Tag for the Docker image (default: latest)'
+    required: false
+    default: 'latest'
+runs:
+  using: 'node20'
+  main: 'dist/index.js'

@@ -35,7 +35,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Publish Docker Image
-        uses: your-username/docker-publish-action@v1
+        uses: cholraju/docker-publish-action@v1
         with:
           image_name: yourdockerhub/my-app
           docker_username: ${{ secrets.DOCKER_USERNAME }}
